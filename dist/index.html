@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="stylesheet" href="custom.css">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -20,13 +22,32 @@
 
     <title>Crio.Do</title>
   </head>
-  <body class="h-[2000px] overflow-y-scroll no-scrollbar">
-    <div class="fixed w-[100%]">
+  <body class="h-[2000px] overflow-y-scroll no-scrollbar relative">
+    <!-- bottom sticky Start -->
+    <div
+      class="bg-[#2BF8C5] fixed w-full text-center bottom-0 sm:py-1 p-2 z-50 text-[10px] sm:text-[16px]"
+    >
+      <div>
+        Feel free to reach out to us at
+        <a href="tel:07317954220" class="font-bold">07317954220</a> or simply
+        <div class="inline-block cursor-pointer">
+          <strong class="font-bold underline">Request a Callback</strong>
+        </div>
+        , and we’ll get in touch with you shortly.
+      </div>
+    </div>
+    <!-- bottom sticky End -->
+
+    <!-- -------------------------------------------------------------- -->
+
+    <!-- Navbar & Notification Start -->
+
+    <div class="fixed w-[100%] z-50">
       <!-- Header Notification Start -->
 
       <a href="#">
         <div
-          class="bg-[#2BF8C5] py-[10px] sm:px-[20px] px-[17.5px] flex justify-center text-center items-center gap-[18px] flex-col sm:flex-row w-full text-[10.5px] sm:text-[18px]"
+          class="bg-[#2BF8C5] sm:py-[10px] py-[5px] sm:px-[20px] px-[17.5px] flex justify-center text-center items-center gap-[10px] sm:gap-[18px] flex-col sm:flex-row w-full text-[10.5px] sm:text-[18px]"
         >
           <div>
             Land your dream tech role with Crio.Do | Grab scholarship of up to
@@ -59,21 +80,28 @@
         class="flex justify-between px-[24px] py-[10px] items-center bg-white"
       >
         <div>
-          <img
-            class="sm:w-[130px] w-[100px]"
-            src="./asset/Crio_Dark.webp"
-            alt="logo"
-          />
+          <a href="#"
+            ><img
+              class="sm:w-[130px] w-[100px]"
+              src="./asset/Crio_Dark.webp"
+              alt="logo"
+          /></a>
         </div>
 
         <div class="hidden md:block font-bold md:font-medium md:text-[14px]">
           <div class="flex items-center">
             <ul class="flex gap-4">
-              <li>Program <i class="fa-solid fa-chevron-down"></i></li>
-              <li>Hire from Crio</li>
-              <li>Projects</li>
-              <li>Blog</li>
-              <li>Placements <i class="fa-solid fa-chevron-down"></i></li>
+              <li>
+                <a href="#">Program <i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+              <li><a href="#">Hire from Crio</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Blog</a></li>
+              <li>
+                <a href="#"
+                  >Placements <i class="fa-solid fa-chevron-down"></i
+                ></a>
+              </li>
             </ul>
             <div
               class="border-2 border-black py-1 px-4 rounded-xl ml-3 text-[18px]"
@@ -89,12 +117,18 @@
       <!-- Nav Bar End -->
     </div>
 
+    <!-- Navbar & Notification End -->
+
+    <!-- -------------------------------------------------------------- -->
+
     <!-- Hero Section Start -->
 
-    <header class="pt-[160px] px-4 max-w-[1200px] mx-auto flex justify-between">
+    <header
+      class="pt-[160px] px-4 max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-between"
+    >
       <div>
         <h1
-          class="sm:text-[44px] leading-tight capitalize font-bold text-[32px]"
+          class="sm:text-[44px] leading-tight capitalize font-black text-[32px] md:max-w-[500px]"
         >
           Learn like you would at India’s Top tech companies.
         </h1>
@@ -118,37 +152,395 @@
           <i
             class="fa-solid fa-play w-[28px] h-[28px] bg-[#06634D] flex text-center content-center rounded-full mr-8 text-[12px] text-[#2BF8C5] group-hover:bg-[#2BF8C5] group-hover:text-[#06634D]"
           ></i>
-          <span class="text-[#06634D] font-bold text-lg group-hover:underline decoration-[#06634D]"
+          <span
+            class="text-[#06634D] font-bold text-lg group-hover:underline decoration-[#06634D]"
             >Upskill with Crio</span
           ></a
         >
 
-        <ul class="mt-[24px] bg-[#F1FBF7] flex text-center justify-around rounded-xl">
-          <li>
+        <ul
+          class="mt-[24px] bg-[#F1FBF7] text-center rounded-xl grid grid-cols-2 sm:grid-cols-5 divide-x "
+        >
+          <li class="p-1">
             <p class="font-bold text-[24px]">95%</p>
-            <p>placed within 9 months of graduation</p>
+            <p class="md:text-[12px] text-[8px]">
+              placed within 9 months of graduation
+            </p>
           </li>
-          <li>
+          <li class="p-1">
             <p class="font-bold text-[24px]">10 LPA</p>
-            <p>average dream job CTC</p>
+            <p class="md:text-[12px] text-[8px]">average dream job CTC</p>
           </li>
-          <li>
+          <li class="p-1">
             <p class="font-bold text-[24px]">21 LPA</p>
-            <p>average super-dream job CTC</p>
+            <p class="md:text-[12px] text-[8px]">average super-dream job CTC</p>
           </li>
-          <li>
+          <li class="p-1">
             <p class="font-bold text-[24px]">1000+</p>
-            <p>Hiring Partners</p>
+            <p class="md:text-[12px] text-[8px]">Hiring Partners</p>
           </li>
-          <li>
+          <li class="p-1">
             <p class="font-bold text-[24px]">81%</p>
-            <p>Average Salary Hike</p>
+            <p class="md:text-[12px] text-[8px]">Average Salary Hike</p>
           </li>
         </ul>
       </div>
-      <div class="">Right</div>
+
+      <div
+        class="bg-[#E6F5F2] rounded-lg p-6 min-w-[200px] md:min-w-[500px] md:ml-[20px] mt-4 lg:mt-0"
+      >
+        <div class="mt-4 flex bg-white p-2 md:p-4 rounded-lg items-center">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Program interested"
+            class="w-full border-none outline-none text-[10px] md:text-[16px]"
+          />
+          <i
+            class="fa-solid fa-question w-[28px] h-[28px] flex text-center content-center rounded-full bg-[#B9CFCA] text-white text-[14px]"
+          ></i>
+        </div>
+        <div class="mt-4 flex bg-white p-2 md:p-4  rounded-lg items-center">
+          <input
+            type="text"
+            class="w-full border-none outline-none text-[10px] md:text-[16px]"
+            placeholder="Name"
+          />
+          <i
+            class="fa-solid fa-address-card w-[28px] h-[28px] flex text-center content-center rounded-full bg-[#B9CFCA] text-white text-[14px]"
+          ></i>
+        </div>
+        <div class="mt-4 flex bg-white p-2 md:p-4  rounded-lg items-center">
+          <input
+            type="email"
+            name=""
+            id=""
+            class="w-full border-none outline-none text-[10px] md:text-[16px]"
+            placeholder="Email"
+          />
+          <i
+            class="fa-solid fa-envelope w-[28px] h-[28px] flex text-center content-center rounded-full bg-[#B9CFCA] text-white text-[14px]"
+          ></i>
+        </div>
+        <div class="mt-4 flex bg-white p-2 md:p-4  rounded-lg items-center relative">
+          <p
+            class="absolute top-0 left-0 mt-1 ml-2 md:ml-4 text-[8px] sm:text-[12px] text-[#97a5a2] font-semibold z-10"
+          >
+            Phone
+          </p>
+
+          <input
+            type="number"
+            name=""
+            id=""
+            class="w-full border-none outline-none z-0 remove-arrow text-[10px] md:text-[16px]"
+          />
+          <i
+            class="fa-solid fa-phone w-[28px] h-[28px] flex text-center content-center rounded-full bg-[#B9CFCA] text-white text-[14px]"
+          ></i>
+        </div>
+        <div class="mt-4 text-[8px] flex">
+          <input type="checkbox" name="" id="" class="mr-3 accent-green-500" />I
+          agree to receive SMS & Whatsapp communications on this number.
+        </div>
+        <div
+          class="mt-4 bg-[#FFE503] font-semibold text-center py-3 mx-auto rounded-lg shadow hover:shadow-lg cursor-pointer"
+        >
+          Book Your Trial <i class="fa-solid fa-chevron-right text-[14px]"></i>
+        </div>
+      </div>
     </header>
 
     <!-- Hero Section End -->
+
+    <!-- -------------------------------------------------------------- -->
+
+    <!-- Main Content Start -->
+    <main>
+      <!-- Student Placed Section Start -->
+      <div class="flex flex-col items-center text-center mt-[30px]">
+        <div class="text-[28px] font-bold max-w-[500px]">
+          <h1>Crio Grads <br />have Cracked their Dream Careers In</h1>
+        </div>
+
+        <div class="relative flex overflow-x-hidden">
+          <div class="py-12 animate-marquee whitespace-nowrap flex gap-5">
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+          </div>
+
+          <div
+            class="py-12 animate-marquee whitespace-nowrap flex gap-5 ml-[20px]"
+          >
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+            <div
+              class="flex flex-col items-center bg-[#E6F5F2] px-[50px] py-3 rounded-xl"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt=""
+                class="w-[50px] rounded-full"
+              />
+              <p class="font-bold">Shubham Tade</p>
+              <p class="font-light text-[14px]">is in</p>
+              <p class="text-[#014246] font-black tracking-[5px] py-2">LOGO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Student Placed Section End -->
+    </main>
+
+    <!-- Main Content End -->
   </body>
 </html>
