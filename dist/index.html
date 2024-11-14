@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="custom.css" />
 
     <link
       rel="stylesheet"
@@ -111,7 +111,19 @@
           </div>
         </div>
 
-        <div class="md:hidden"><i class="fa-solid fa-bars"></i></div>
+        <div class="md:hidden cursor-pointer relative">
+          <i class="fa-solid fa-close "></i>
+
+          <div class="bg-slate-100 w-[100px] h-[200px] pr-4 absolute right-0 text-right ">
+            <ul class="flex flex-col gap-3 mt-3">
+              <li><a href="#" class="hover:underline">HOME</a></li>
+              <li><a href="#" class="hover:underline">HOME</a></li>
+              <li><a href="#" class="hover:underline">HOME</a></li>
+              <li><a href="#" class="hover:underline">HOME</a></li>
+              <li><a href="#" class="hover:underline">HOME</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
       <!-- Nav Bar End -->
@@ -159,7 +171,7 @@
         >
 
         <ul
-          class="mt-[24px] bg-[#F1FBF7] text-center rounded-xl grid grid-cols-2 sm:grid-cols-5 divide-x "
+          class="mt-[24px] bg-[#F1FBF7] text-center rounded-xl grid grid-cols-2 sm:grid-cols-5 divide-x"
         >
           <li class="p-1">
             <p class="font-bold text-[24px]">95%</p>
@@ -201,7 +213,7 @@
             class="fa-solid fa-question w-[28px] h-[28px] flex text-center content-center rounded-full bg-[#B9CFCA] text-white text-[14px]"
           ></i>
         </div>
-        <div class="mt-4 flex bg-white p-2 md:p-4  rounded-lg items-center">
+        <div class="mt-4 flex bg-white p-2 md:p-4 rounded-lg items-center">
           <input
             type="text"
             class="w-full border-none outline-none text-[10px] md:text-[16px]"
@@ -211,7 +223,7 @@
             class="fa-solid fa-address-card w-[28px] h-[28px] flex text-center content-center rounded-full bg-[#B9CFCA] text-white text-[14px]"
           ></i>
         </div>
-        <div class="mt-4 flex bg-white p-2 md:p-4  rounded-lg items-center">
+        <div class="mt-4 flex bg-white p-2 md:p-4 rounded-lg items-center">
           <input
             type="email"
             name=""
@@ -223,7 +235,9 @@
             class="fa-solid fa-envelope w-[28px] h-[28px] flex text-center content-center rounded-full bg-[#B9CFCA] text-white text-[14px]"
           ></i>
         </div>
-        <div class="mt-4 flex bg-white p-2 md:p-4  rounded-lg items-center relative">
+        <div
+          class="mt-4 flex bg-white p-2 md:p-4 rounded-lg items-center relative"
+        >
           <p
             class="absolute top-0 left-0 mt-1 ml-2 md:ml-4 text-[8px] sm:text-[12px] text-[#97a5a2] font-semibold z-10"
           >
